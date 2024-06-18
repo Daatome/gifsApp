@@ -3,10 +3,13 @@
     <hr class="text-white">
 
     <div class="list-group list-reset"  >
-        <button *ngFor="let tag of getHistory; index as i;" class="list-group-item list-group-item-action">
+        <button
+         *ngFor="let tag of getHistory; index as i;" class="list-group-item list-group-item-action"
+          (click)="searchTag(tag)"
+        >
             {{tag |titlecase}}
         </button>
-        
+
     </div>
 
 </div>

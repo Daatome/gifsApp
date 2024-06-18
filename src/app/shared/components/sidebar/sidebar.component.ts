@@ -18,6 +18,12 @@ export class SidebarComponent {
     return this.gifsService.getHistory()
   }
 
-  
+  searchTag(tag:string){
+    this.gifsService.searchTag(tag);
+
+
+  }
+
+
 
 }
