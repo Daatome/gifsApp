@@ -1,0 +1,7 @@
+<div class="row justify-content-center">
+  <img [src]="url" [alt]="alt" class="card-img-top" (load)="onLoad()" [ngStyle]="{display: hasLoaded ? '' : 'none'}"  >
+
+  <div class="spinner-border" role="status" *ngIf="!hasLoaded">
+    <span class="sr-only"></span>
+  </div>
+</div>
